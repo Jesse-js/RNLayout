@@ -21,7 +21,9 @@ const styles = StyleSheet.create({
   container: {
    flex: 1,
    // set the direction of the main axis
-   flexDirection: 'row-reverse', //column, column-reverse, row, row-reverse 
+   flexDirection: 'default', //column, column-reverse, row, row-reverse 
+   // defines the alignment along the main axis
+   justifyContent: 'space-around', //flex-start, flex-end, center, space-between, space-around, space-evenly
    marginTop: 20,
    borderWidth: 6,
    borderColor: 'red',
