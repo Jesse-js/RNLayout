@@ -6,13 +6,13 @@ export default function App() {
 
     // </View>
     <View style={styles.container}>
-      <Box style={{ backgroundColor: 'silver', flex: 0, paddingVertical: 200 }}>Box 1</Box>
-      <Box style={{ backgroundColor: 'green', flex: 0 }}>Box 2</Box>
-      <Box style={{ backgroundColor: 'purple', flex: 0 }}>Box 3</Box>
-      {/* <Box style={{ backgroundColor: 'orange' }}>Box 4</Box>
-      <Box style={{ backgroundColor: 'blue' }}>Box 5</Box>
+      <Box style={{ backgroundColor: 'silver', alignSelf: 'flex-start' }}>Box 1</Box>
+      <Box style={{ backgroundColor: 'green', alignSelf: 'flex-end' }}>Box 2</Box>
+      <Box style={{ backgroundColor: 'purple', alignSelf: 'center' }}>Box 3</Box>
+      <Box style={{ backgroundColor: 'orange', alignSelf: 'stretch' }}>Box 4</Box>
+      <Box style={{ backgroundColor: 'blue' /** the default value is the same of the value of alignItems parent property*/  }}>Box 5</Box>
       <Box style={{ backgroundColor: 'yellow' }}>Box 6</Box>
-      <Box style={{ backgroundColor: 'pink' }}>Box 7</Box> */}
+      <Box style={{ backgroundColor: 'pink' }}>Box 7</Box>
     </View>
   );
 }
@@ -21,11 +21,11 @@ const styles = StyleSheet.create({
   container: {
    flex: 1,
    // set the direction of the main axis
-   flexDirection: 'row', //column (default), column-reverse, row, row-reverse 
+   flexDirection: 'column', //column (default), column-reverse, row, row-reverse 
    // defines the alignment along the main axis
-   justifyContent: 'space-around', //flex-start (default), flex-end, center, space-between, space-around, space-evenly
+   justifyContent: 'flex-start', //flex-start (default), flex-end, center, space-between, space-around, space-evenly
    //defines the alignment along the cross axis
-   alignItems: 'baseline', //flex-start, flex-end, center, baseline, stretch (default)
+   alignItems: 'flex-start', //flex-start, flex-end, center, baseline, stretch (default)
    marginTop: 20,
    borderWidth: 6,
    borderColor: 'red',
