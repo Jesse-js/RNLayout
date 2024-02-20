@@ -22,7 +22,10 @@ const styles = StyleSheet.create({
    //flex: 1,
    height: 300,
    flexWrap: 'wrap', //wrap, nowrap, wrap-reverse
-   alignContent: 'space-around',
+  //  rowGap: 20,
+  //  columnGap: 20,
+   gap: 10,
+   //alignContent: 'space-around',
    // set the direction of the main axis
    flexDirection: 'column', //column (default), column-reverse, row, row-reverse 
    // defines the alignment along the main axis
