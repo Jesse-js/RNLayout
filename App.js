@@ -20,12 +20,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
    flex: 1,
+   //height: 300,
+   flexWrap: 'nowrap', //wrap, nowrap, wrap-reverse
    // set the direction of the main axis
    flexDirection: 'column', //column (default), column-reverse, row, row-reverse 
    // defines the alignment along the main axis
    justifyContent: 'flex-start', //flex-start (default), flex-end, center, space-between, space-around, space-evenly
    //defines the alignment along the cross axis
-   alignItems: 'flex-start', //flex-start, flex-end, center, baseline, stretch (default)
+   alignItems: 'stretch', //flex-start, flex-end, center, baseline, stretch (default)
    marginTop: 20,
    borderWidth: 6,
    borderColor: 'red',
